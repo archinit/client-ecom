@@ -1,5 +1,5 @@
 export const Footer = () => {
     return <div>
-        Footer
+        Footer updated
     </div>
 }
