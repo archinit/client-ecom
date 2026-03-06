@@ -7,7 +7,7 @@ export const Footer = () => {
             <Link href="/" className="flex items-center">
             <Image
                 src="/logo.png"
-                alt="Somename"
+                alt="Ecomm"
                 width={36}
                 height={36}
             />
