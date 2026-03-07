@@ -11,7 +11,7 @@ export const Footer = () => {
                 width={36}
                 height={36}
             />
-            <p className="hidden md:block text-md font-semibold tracking-wide text-white">SOMENAME</p>
+            <p className="hidden md:block text-md font-semibold tracking-wide text-white">ECOMM</p>
             </Link>
             <p className="text-sm text-gray-300">© 2025 SOMENAME.</p>
             <p className="text-sm text-gray-300">© All rights reserved.</p>
