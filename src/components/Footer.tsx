@@ -26,7 +26,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-4 text-sm text-gray-300 items-center md:items-start">
             <p className="text-sm text-amber-50">Products</p>
             <Link href="/">All Products</Link>
-            <Link href="/">New Arrivals</Link>
+            <Link href="/">New Products</Link>
             <Link href="/">Best Sellers</Link>
             <Link href="/">Sale</Link>
         </div>
