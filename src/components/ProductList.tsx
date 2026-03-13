@@ -1,4 +1,8 @@
-const products = [
+import { ProductsType } from "@/types"
+import { Categories } from "./Categories"
+import { ProductCard } from "./ProductCard"
+
+const products: ProductsType = [
     {
         id: 1,
         name: "Adidas CoreFit T-shirt",
@@ -110,7 +114,8 @@ const products = [
 ]
 
 export const ProductList = () => {
-    return <div>
-        Products Lists
+    return <div className="w-full">
+        <Categories />
+        <ProductCard />
     </div>
 }
