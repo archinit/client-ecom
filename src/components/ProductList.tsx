@@ -116,6 +116,10 @@ const products: ProductsType = [
 export const ProductList = () => {
     return <div className="w-full">
         <Categories />
-        <ProductCard />
+        <div className="grid grid-cols-1 sm:grid xl:grid-cols-2 2xl:grid-cols-4 gap-12">
+            {products.map((product) => (
+                <ProductCard key={product.id} product={product}/>
+            ))}
+        </div>
     </div>
 }
