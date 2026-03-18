@@ -17,6 +17,26 @@ export const ProductCard = ({product} : {product: ProductType}) => {
                 className="object-cover hover:scale-105 transition-all duration-300"/>
             </div>
             </Link>
+
+            {/* PRODUCT DETAILS */}
+            <div className="flex flex-col gap-4 p-4">
+                <h1 className="font-medium">{product.name}</h1>
+                <p className="text-sm text-gray-500">{product.shortDescription}</p>
+                {/* PRODUCT TYPES */}
+                <div className="flex items-center gap-4 text-xs">
+                    {/* SIZES */}
+                    <div className="flex flex-col gap-1">
+                        <span className="text-gray-500">Size</span>
+                        <select name="size" id="size">
+                            {product.sizes.map(size => (
+                                <option value={size}>{size}</option>
+                            ))}
+                        </select>
+                    </div>
+                    {/* COLORS */}
+                    <div className=""></div>
+                </div>
+            </div>
         </div>
     </div>
 }
