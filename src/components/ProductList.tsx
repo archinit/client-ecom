@@ -13,8 +13,8 @@ const products: ProductsType = [
         colors: ["gray", "purple", "green"],
         images: {
             gray: "/products/1g.png",
+            green: "/products/1gr.png",
             purple: "/products/1p.png",
-            green: "/products/1gr.png"
         },
     },
     {
@@ -66,9 +66,9 @@ const products: ProductsType = [
         sizes: ["s", "m", "l"],
         colors: ["red", "orange", "black"],
         images: {
-            red: "/products/5r.png",
+            black: "/products/5bl.png",
             orange: "/products/5o.png",
-            black: "/products/5bl.png"
+            red: "/products/5r.png"
         },
     },
     {
@@ -116,7 +116,7 @@ const products: ProductsType = [
 export const ProductList = () => {
     return <div className="w-full">
         <Categories />
-        <div className="grid grid-cols-1 sm:grid xl:grid-cols-2 2xl:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-12">
             {products.map((product) => (
                 <ProductCard key={product.id} product={product}/>
             ))}
