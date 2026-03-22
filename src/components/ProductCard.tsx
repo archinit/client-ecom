@@ -71,7 +71,7 @@ export const ProductCard = ({product} : {product: ProductType}) => {
                 {/* PRICE AND ADD TO CART BUTTON */}
                     <div className="flex items-center justify-between">
                         <p className="font-medium">${product.price.toFixed(2)}</p>
-                        <button className="ring-1 ring-gray-200 shadow-lg rounded-md px-2 py-1 text-sm cursor-pointer hover:text-white hover:bg-black transition-all duration-300 flex items-center gap-2">
+                        <button className="ring-1 ring-gray-300 shadow-lg rounded-md px-2 py-1 text-sm cursor-pointer hover:text-white hover:bg-black transition-all duration-300 flex items-center gap-2">
                             <ShoppingCart className="w-4 h-4"/>
                             Add to Cart
                         </button>
