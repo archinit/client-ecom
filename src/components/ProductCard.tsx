@@ -73,7 +73,7 @@ export const ProductCard = ({product} : {product: ProductType}) => {
                         <p className="font-medium">${product.price.toFixed(2)}</p>
                         <button className="ring-1 ring-gray-200 shadow-lg rounded-md px-2 py-1 text-sm cursor-pointer hover:text-white hover:bg-black transition-all duration-300 flex items-center gap-2">
                             <ShoppingCart className="w-4 h-4"/>
-                            Add to Cart
+                            Add Card
                         </button>
                     </div>
             </div>
